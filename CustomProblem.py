@@ -3,7 +3,7 @@ import Functions
 import Settings
 from epanettools.epanettools import EPANetSimulation,Node, Link
 class my_mo_problem(Problem):
-    d = EPANetSimulation('/home/varsha/Documents/water networks/d-town.inp')
+    d = EPANetSimulation('/home/varshac/optimization/Optimization-Code/d-town.inp')
     ret, nlinks = d.ENgetcount(d.EN_LINKCOUNT)
     hStar = Settings.SetValues(d)
     Functions.SetVariables(d)
